@@ -179,7 +179,10 @@
             <img src="static/images/ig-ae-training.svg" alt="IG-AE Training" width="75%"/>
           </div>
           <p>
-            some text should go here
+            <b>IG-AE Training.</b>
+            We jointly learn a set of latent synthetic scenes \(\mathcal{T}_\tau\) and supervise the latent images \(z_{s,p}\) of an autoencoder with rendered 3D-consistent latents \(\tilde{z}_{s,p}\) using \(\mathcal{L}_\mathrm{latent}\).
+            We match decoded latent renderings \(\tilde{x}_{s,p}\) with the ground truth scene renderings \(x_{s,p}\) using \(\mathcal{L}_\mathrm{RGB}\).
+            We preserve autoencoder performances on synthetic and real data respectively through \(\mathcal{L}_\mathrm{ae}^\mathrm{(synth)}\) and \(\mathcal{L}_\mathrm{ae}^\mathrm{(real)}\).
           </p>
         </div>
         <!--/ IG-AE Training -->
