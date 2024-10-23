@@ -44,7 +44,7 @@
               <a href="https://scholar.google.fr/citations?user=IL2OzksAAAAJ&hl=fr">Jean-Yves Franceschi</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=N0YTGr8AAAAJ&hl=en">Laurent Caraffa</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=N0YTGr8AAAAJ&hl=en">Laurent Caraffa</a><sup>2</sup>,<br>
             </span>
             <span class="author-block">
               <a href="https://scholar.google.fr/citations?user=L7qb6ToAAAAJ&hl=en">Flavian Vasile</a><sup>1</sup>,
@@ -137,6 +137,29 @@
   journal   = {},
   year      = {2024},
 }</code></pre>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          While pre-trained image autoencoders are increasingly utilized in computer vision, the application of inverse graphics in 2D latent spaces has been under-explored. 
+          Yet, besides reducing the training and rendering complexity, applying inverse graphics in the latent space enables a valuable interoperability with other latent-based 2D methods. 
+          The major challenge is that inverse graphics cannot be directly applied to such image latent spaces because they lack an underlying 3D geometry. 
+          In this paper, we propose an Inverse Graphics Autoencoder (IG-AE) that specifically addresses this issue. 
+          To this end, we regularize an image autoencoder with 3D-geometry by aligning its latent space with jointly trained latent 3D scenes. 
+          We utilize the trained IG-AE to bring NeRFs to the latent space with a latent NeRF training pipeline, which we implement in an open-source extension of the Nerfstudio framework, 
+          thereby unlocking latent scene learning for its supported methods. 
+          We experimentally confirm that Latent NeRFs trained with IG-AE present an improved quality compared to a standard autoencoder, 
+          all while exhibiting training and rendering accelerations with respect to NeRFs trained in the image space.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
   </div>
 </section>
 
