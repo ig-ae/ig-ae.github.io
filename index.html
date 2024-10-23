@@ -163,10 +163,10 @@
             <img src="static/images/latent-nerf-training.svg" alt="Latent NeRF Training" width="75%"/>
           </div>
           <p>
-            \(\mathcal{L}_{a}\)
-            With <a href="http://docs.mathjax.org/en/latest/basic/mathematics.html">\(\LaTeX\) input</a>:
-            When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-            $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+            <b>Latent NeRF Training.</b> 
+            We train a Latent NeRF in two stages. 
+            First, we train the chosen NeRF method \(F_\theta\) on posed encoded latent images using its proprietary loss \(\mathcal{L}_{F_\theta}\) that matches rendered latents \(\tilde{z}_p\) and encoded latents \(z_p\). 
+            Subsequently, we align with the scene in the RGB space by adding decoder fine-tuning via \(\mathcal{L}_\mathrm{align}\) that matches ground truth images \(x_p\) and decoded renderings \(\tilde{x}_p\).
           </p>
         </div>
         <br/>
