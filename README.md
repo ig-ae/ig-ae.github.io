@@ -1,1 +1,1 @@
-# IG-AE
+# Bringing NeRFs to the Latent Space: Inverse Graphics Autoencoder
