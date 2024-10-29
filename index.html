@@ -164,7 +164,8 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Method</h2>
-
+        We propose a Latent NeRF Training Pipeline compatible with most NeRF architectures and auto-encoders (AEs).
+        Subsequently, we identify classical AEs as limiting factors in latent NeRF quality, and propose IG-AE to improve it.
         <!-- Latent NeRF Training Pipeline. -->
         <h3 class="title is-4">Latent NeRF Training Pipeline</h3>
         <div class="content has-text-justified">
@@ -174,7 +175,7 @@
           <p>
             <b>Latent NeRF Training.</b> 
             We train a Latent NeRF in two stages. 
-            First, we train the chosen NeRF method \(F_\theta\) on posed encoded latent images using its proprietary loss \(\mathcal{L}_{F_\theta}\) that matches rendered latents \(\tilde{z}_p\) and encoded latents \(z_p\). 
+            First, we train the chosen NeRF method \(F_\theta\) using its proprietary loss \(\mathcal{L}_{F_\theta}\) that matches rendered latents \(\tilde{z}_p\) and encoded latents \(z_p\). 
             Subsequently, we align with the scene in the RGB space by adding decoder fine-tuning via \(\mathcal{L}_\mathrm{align}\) that matches ground truth images \(x_p\) and decoded renderings \(\tilde{x}_p\).
           </p>
         </div>
