@@ -169,14 +169,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           While pre-trained image autoencoders are increasingly utilized in computer vision, the application of inverse graphics in 2D latent spaces has been under-explored. 
-          Yet, besides reducing the training and rendering complexity, applying inverse graphics in the latent space enables a valuable interoperability with other latent-based 2D methods. 
+          Yet, besides reducing the training and rendering complexity, applying inverse graphics in the latent space enables a valuable interoperability with other latent-based 2D methods.
           The major challenge is that inverse graphics cannot be directly applied to such image latent spaces because they lack an underlying 3D geometry. 
-          In this paper, we propose an Inverse Graphics Autoencoder (IG-AE) that specifically addresses this issue. 
+          In this paper, we propose an Inverse Graphics Autoencoder (IG-AE) that specifically addresses this issue.
           To this end, we regularize an image autoencoder with 3D-geometry by aligning its latent space with jointly trained latent 3D scenes. 
-          We utilize the trained IG-AE to bring NeRFs to the latent space with a latent NeRF training pipeline, which we implement in an open-source extension of the Nerfstudio framework, 
-          thereby unlocking latent scene learning for its supported methods. 
-          We experimentally confirm that Latent NeRFs trained with IG-AE present an improved quality compared to a standard autoencoder, 
-          all while exhibiting training and rendering accelerations with respect to NeRFs trained in the image space.
+          We utilize the trained IG-AE to bring NeRFs to the latent space with a latent NeRF training pipeline, which we implement in an open-source extension of the Nerfstudio framework, thereby unlocking latent scene learning for its supported methods. 
+          We experimentally confirm that Latent NeRFs trained with IG-AE present an improved quality compared to a standard autoencoder, all while exhibiting training and rendering accelerations with respect to NeRFs trained in the image space.
         </div>
       </div>
     </div>
@@ -233,6 +231,43 @@
 </section>
 <!--/ Method -->
 
+<!-- Latent NeRFs. -->
+<section class="section">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-full-width">
+              <h2 class="title is-3">Latent NeRFs</h2>
+              Visualization of Latent NeRFs trained on Objaverse using the Vanilla-NeRF architecture, our Latent NeRF Training Pipeline, and IG-AE.
+              <div class="content has-text-justified">
+                <div class="columns is-centered has-text-centered">
+                    <video id="large-scale" autoplay muted loop playsinline width="90%">
+                        <source src="./static/videos/supplementary_videos/vanilla/vanilla_all_scenes_1.mp4"
+                                type="video/mp4">
+                    </video>   
+                </div>
+            </div>
+            <div class="content has-text-justified">
+              <div class="columns is-centered has-text-centered">
+                  <video id="large-scale" autoplay muted loop playsinline width="90%">
+                      <source src="./static/videos/supplementary_videos/vanilla/vanilla_all_scenes_2.mp4"
+                              type="video/mp4">
+                  </video>   
+              </div>
+          </div>
+          <div class="content has-text-justified">
+            <div class="columns is-centered has-text-centered">
+                <video id="large-scale" autoplay muted loop playsinline width="90%">
+                    <source src="./static/videos/supplementary_videos/vanilla/vanilla_all_scenes_3.mp4"
+                            type="video/mp4">
+                </video>   
+            </div>
+        </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--/ Latent NeRFs. -->
+
 <!-- Results. -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -265,6 +300,18 @@
         </div>
         <br/>
         <!--/ Shapenet Hat -->
+        <!-- Shapenet Hat zoomed -->
+        <h3 class="title is-4">Shapenet Hat</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="70%">
+              <source src="./static/videos/supplementary_videos/hats_zoomed.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Shapenet Hat zoomed -->
 
         <!-- Shapenet Vase -->
         <h3 class="title is-4">Shapenet Vase</h3>
@@ -278,22 +325,127 @@
         </div>
         <br/>
         <!--/ Shapenet Vase -->
+        <!-- Shapenet Hat zoomed -->
+        <h3 class="title is-4">Shapenet Hat</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="70%">
+              <source src="./static/videos/supplementary_videos/vases_zoomed.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Shapenet Hat zoomed -->
       </div>
     </div>
   </div>
 </section>
 <!--/ Results -->
 
+<!-- Supplementary Results. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Supplementary results on Objaverse</h2>
+        This section illustrates our supplementary results on held-out Objaverse objects.<br><br><br>
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Book</h3>
+        <div class="content has-text-justified">
+            <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+                <source src="./static/videos/supplementary_videos/tensorf/Book.mp4"
+                        type="video/mp4">
+            </video>   
+            </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Burger</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/supplementary_videos/tensorf/Burger.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Flower</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/supplementary_videos/tensorf/Flower.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Painting</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/supplementary_videos/tensorf/Painting.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Robot </h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/supplementary_videos/tensorf/Robot.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+
+        <!-- Objaverse -->
+        <h3 class="title is-4">Objaverse Table</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <video id="large-scale" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/supplementary_videos/tensorf/Table.mp4"
+                      type="video/mp4">
+            </video>   
+          </div>
+        </div>
+        <br/>
+        <!--/ Objaverse -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Supplementary Results -->
+
 <!-- BibTex -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-      @article{ig-ae,
-        title={{Bringing NeRFs to the Latent Space: Inverse Graphics Autoencoder}}, 
-        author={Antoine Schnepf and Karim Kassab and Jean-Yves Franceschi and Laurent Caraffa and Flavian Vasile and Jeremie Mary and Andrew Comport and Valérie Gouet-Brunet},
-        journal={arXiv preprint arXiv:2410.22936},
-        year={2024}
+      @inproceedings{
+        schnepf2025bringing,
+        title={Bringing Ne{RF}s to the Latent Space: Inverse Graphics Autoencoder},
+        author={Antoine Schnepf and Karim Kassab and Jean-Yves Franceschi and Laurent Caraffa and Flavian Vasile and Jeremie Mary and Andrew I. Comport and Valerie Gouet-Brunet},
+        booktitle={The Thirteenth International Conference on Learning Representations},
+        year={2025},
+        url={https://openreview.net/forum?id=LTDtjrv02Y}
       }
     </code></pre>
   </div>
